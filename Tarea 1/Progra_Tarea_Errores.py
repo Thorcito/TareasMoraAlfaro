@@ -10,6 +10,7 @@
 # Variable global
 zero = 0  # Variable usada en la función cero
 
+
 # Funciones de operaciones
 
 
@@ -23,7 +24,7 @@ def Resta(op1, op2):  # Función de resta
     return res  # Retorna resultado
 
 
-def Division (op1, op2):  # Función de división
+def Division(op1, op2):  # Función de división
     res = op1 / op2  # Se realiza una división
     return res  # Retorna resultado
 
@@ -34,11 +35,14 @@ def Cero(op2):
     if op2 == 0:  # Caso en donde el operando es 0
         zero = 1  # Cambia el valor de la variable global
         return zero  # Retorna la variable
-    else:  # En caso de que op2 no sea 0 se cambia el valor de la variable global
+    else:  # En caso de que op2 no sea 0 se cambia el
+        # valor de la variable global
         zero = 0
         return zero  # Retorna la variable
 
+
 # Función para hacer las operaciones correspondientes
+
 
 def basic_operations(op1, op2, op):
     global zero  # Se llama la variable global
@@ -58,6 +62,7 @@ def basic_operations(op1, op2, op):
             return "E2"  # retorna el error E2
     else:  # Si los valores no son enteros, retorna el error E1
         return "E1"
+
 
 # Función para contar caracteres de un string
 
